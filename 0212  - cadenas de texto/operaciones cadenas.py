@@ -7,7 +7,7 @@ print("gramo" not in s2)
 
 #Los operadores  relacionales  nos permiten
 # comparar  dos cadenas de texto.
-
+print("Operadores relacioneales")
 print("asa" < "oso")
 print("cosa" <= "cosas")
 print("CASA" >= "casa")
