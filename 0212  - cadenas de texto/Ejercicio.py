@@ -8,3 +8,10 @@
 #         1 i
 #         2 o
 #         0 u
+
+cadena = input("Escribe una cadena de texto: ")
+print(cadena.count("a"), "a")
+print(cadena.count("e"), "e")
+print(cadena.count("i"), "i")
+print(cadena.count("o"), "o")
+print(cadena.count("u"), "u")
