@@ -1,7 +1,7 @@
 #Escribir "Introduce un n�mero: "Sin Saltar
 #Leer num
 
-num = input("Introduce un número: ")
+num = int(input("Introduce un número: "))
 
 #Si num % 2 = 0 Entonces
 #   Escribir "El n�mero es par"
