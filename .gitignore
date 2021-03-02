@@ -204,3 +204,13 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .idea/
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
