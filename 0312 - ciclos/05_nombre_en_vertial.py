@@ -7,3 +7,10 @@
 #   h
 #   o
 #   n
+
+nombre = input("Ingresa un nombre: ")
+
+longitud = len(nombre)
+
+for i in range(longitud):
+    print(nombre[i])
