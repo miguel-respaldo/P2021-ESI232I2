@@ -1,10 +1,10 @@
 # uso de continue en while
 
-i = 1
+i = 0
 
 while i <= 10:
     print("hola")
+    i = i + 1
     if i % 2 != 0:
         continue
     print(i)
-    i = i + 1
