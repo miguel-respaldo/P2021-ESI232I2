@@ -10,3 +10,7 @@ lista_8 = [2, 3, 4]
 lista_9 = ["rojo", "verde", "azul"]
 
 print(lista_2[0])
+
+for elemento in lista_9:
+    print(elemento)
+
