@@ -7,10 +7,10 @@ lista_6 = list([2, "tres", 4.5]) # lista con elementos de diferentes tipos.
 
 lista_7 = []
 lista_8 = [2, 3, 4]
-lista_9 = ["rojo", "verde", "azul"]
+lista_9 = ["rojo", "verde", "azul", "rosa"]
 
 print(lista_2[0])
-
+print("---------------")
 for elemento in lista_9:
     print(elemento)
 
