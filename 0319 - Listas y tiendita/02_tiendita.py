@@ -10,7 +10,8 @@ carrito_cantidad = []
 # Opción del menu
 opcion = 0
 
-# Mientras la opción no sea 6 repetir el menu
+# Mientras la opción  no sea igual a 6 repetir el menu
+# Mientras la opción sea diferente a 6 repetir el menu
 while opcion != 6:
     print("1. Mostrar productos")
     print("2. Mostrar el carrito")
@@ -21,6 +22,21 @@ while opcion != 6:
     print("")
     opcion = int(input("Opción: "))
     print("")
+
+    if opcion == 1:
+        print("La opción es 1")
+    elif opcion == 2:
+        print("La opción es 2")
+    elif opcion == 3:
+        print("La opción es 3")
+    elif opcion == 4:
+        print("La opción es 4")
+    elif opcion == 5:
+        print("La opción es 5")
+    elif opcion == 6:
+        print("La opción es 6")
+    else:
+        print("La opción no existe.")
 
 
 
