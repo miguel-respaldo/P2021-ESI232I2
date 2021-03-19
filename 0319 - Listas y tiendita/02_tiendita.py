@@ -32,9 +32,9 @@ while opcion != 6:
     elif opcion == 2:
         tamano = len(carrito_producto)
         print("----  Carrito ----------")
-        print("No.    Nombre     Precio")
+        print("No.    Nombre     Precio      Cantidad")
         for i in range(tamano):
-            print(i+1,". ",carrito_producto[i],"  ", carrito_cantidad[i])
+            print(i+1,". ", lista_productos[ carrito_producto[i] ],"  ",lista_precio[ carrito_producto[i] ], "   ", carrito_cantidad[i])
 
     elif opcion == 3:
         tamano = len(lista_productos)
