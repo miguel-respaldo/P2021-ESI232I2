@@ -27,20 +27,20 @@ while opcion != 6:
         tamano = len(productos)
         print("No.    Nombre     Precio")
         for i in range(tamano):
-            print(i,". ",productos[i],"  ", precio[i])
+            print(i+1,". ",productos[i],"  ", precio[i])
 
     elif opcion == 2:
         tamano = len(carrito_producto)
         print("----  Carrito ----------")
         print("No.    Nombre     Precio")
         for i in range(tamano):
-            print(i,". ",carrito_producto[i],"  ", carrito_cantidad[i])
+            print(i+1,". ",carrito_producto[i],"  ", carrito_cantidad[i])
 
     elif opcion == 3:
         tamano = len(productos)
         print("No.    Nombre     Precio")
         for i in range(tamano):
-            print(i,". ",productos[i],"  ", precio[i])
+            print(i+1,". ",productos[i],"  ", precio[i])
         print("------------------------")
         cual_producto = input("¿Cual producto quieres agregar?")
 
