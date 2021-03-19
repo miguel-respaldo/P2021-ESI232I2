@@ -24,7 +24,11 @@ while opcion != 6:
     print("")
 
     if opcion == 1:
-        print("La opción es 1")
+        tamano = len(productos)
+        print("No.    Nombre     Precio")
+        for i in range(tamano):
+            print(i,". ",productos[i],"  ", precio[i])
+
     elif opcion == 2:
         print("La opción es 2")
     elif opcion == 3:
