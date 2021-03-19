@@ -1,7 +1,7 @@
 # Lista de los productos
-productos = ["papas", "refrescos", "tortillas", "jamon"]
+lista_productos = ["papas", "refrescos", "tortillas", "jamon"]
 # Lista de los precios
-precio =    [12,      10.5,         20,         40]
+lista_precio =    [12,      10.5,         20,         40]
 # Lista del carrito con los productos
 carrito_producto = []
 # Lista de la cantidad en cada producto
@@ -24,10 +24,10 @@ while opcion != 6:
     print("")
 
     if opcion == 1:
-        tamano = len(productos)
+        tamano = len(lista_productos)
         print("No.    Nombre     Precio")
         for i in range(tamano):
-            print(i+1,". ",productos[i],"  ", precio[i])
+            print(i+1,". ",lista_productos[i],"  ", lista_precio[i])
 
     elif opcion == 2:
         tamano = len(carrito_producto)
@@ -37,12 +37,15 @@ while opcion != 6:
             print(i+1,". ",carrito_producto[i],"  ", carrito_cantidad[i])
 
     elif opcion == 3:
-        tamano = len(productos)
+        tamano = len(lista_productos)
         print("No.    Nombre     Precio")
         for i in range(tamano):
-            print(i+1,". ",productos[i],"  ", precio[i])
+            print(i+1,". ",lista_productos[i],"  ", lista_precio[i])
         print("------------------------")
-        cual_producto = input("¿Cual producto quieres agregar?")
+        num_producto = int(input("Ingresa el número del prodcto a agregar: "))
+        cant_producto = int(input("Cuantos articulos quieres de este producto: "))
+        carrito_producto.append(num_producto-1)
+        carrito_cantidad.append(cant_producto)
 
     elif opcion == 4:
         print("La opción es 4")
