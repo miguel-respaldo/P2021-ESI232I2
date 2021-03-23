@@ -57,11 +57,11 @@ while opcion != 6:
         # Leemos el numero del carrito a borrar
         num_producto = int(input("Ingresa el número del producto a borrar"))
         # Sustituir por un 0 el valor del articulo a borrar
-        carrito_producto[ num_producto-1 ] = 0
-        carrito_cantidad[ num_producto-1 ] = 0
+        carrito_producto[ num_producto-1 ] = -1
+        carrito_cantidad[ num_producto-1 ] = -1
         # Removerlo de la lista del carrito
-        carrito_producto.remove(0)
-        carrito_cantidad.remove(0)
+        carrito_producto.remove(-1)
+        carrito_cantidad.remove(-1)
 
 
 
