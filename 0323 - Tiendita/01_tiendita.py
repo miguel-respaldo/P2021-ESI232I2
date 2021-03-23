@@ -48,7 +48,29 @@ while opcion != 6:
         carrito_cantidad.append(cant_producto)
 
     elif opcion == 4:
-        print("La opción es 4")
+        tamano = len(carrito_producto)
+        print("----  Carrito ----------")
+        print("No.    Nombre     Precio      Cantidad")
+        for i in range(tamano):
+            print(i+1,". ", lista_productos[ carrito_producto[i] ],"  ",lista_precio[ carrito_producto[i] ], "   ", carrito_cantidad[i])
+        print("------------------------")
+        # Leemos el numero del carrito a borrar
+        num_producto = int(input("Ingresa el número del producto a borrar"))
+        # Sustituir por un 0 el valor del articulo a borrar
+        carrito_producto[ num_producto-1 ] = 0
+        carrito_cantidad[ num_producto-1 ] = 0
+        # Removerlo de la lista del carrito
+        carrito_producto.remove(0)
+        carrito_cantidad.remove(0)
+
+
+
+
+
+
+
+
+
     elif opcion == 5:
         print("La opción es 5")
     elif opcion == 6:
