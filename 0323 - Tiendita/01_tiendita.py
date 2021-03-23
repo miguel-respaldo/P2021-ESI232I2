@@ -13,6 +13,8 @@ opcion = 0
 # Mientras la opción  no sea igual a 6 repetir el menu
 # Mientras la opción sea diferente a 6 repetir el menu
 while opcion != 6:
+    print("")
+    print("-------------------------------------")
     print("1. Mostrar productos")
     print("2. Mostrar el carrito")
     print("3. Agregar al carrito")
