@@ -6,13 +6,23 @@ def menu():
     print("4) Calcular el área de un círculo")
     print("5) Salir")
 
+def area_rectangulo(base, altura):
+    resultado = base * altura
+    return resultado
+
+def calcular_area_rectangulo():
+    largo = float(input("¿Cuanto mide de largo?: "))
+    ancho = float(input("¿Cuanto mide de ancho?: "))
+    area = area_rectangulo(largo, ancho)
+    print("El area del rectangulo es ", area)
+
 opcion = 0
 # Mientras la opcion sea deferente de 5
 while opcion != 5:
     menu()
     opcion = int(input("Opción: "))
     if opcion == 1:
-        print("opcion 1")
+        calcular_area_rectangulo()
     elif opcion == 2:
         print("opcion 2")
     elif opcion == 3:
