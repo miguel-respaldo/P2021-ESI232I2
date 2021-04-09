@@ -26,7 +26,7 @@ while opcion != 5:
     elif opcion == 2:
         print("opcion 2")
     elif opcion == 3:
-        print("opcion 3")
+        calcular_area_rectangulo()
     elif opcion == 4:
         print("opcion 4")
 
