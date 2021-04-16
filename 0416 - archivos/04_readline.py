@@ -1,3 +1,7 @@
 archivo = open("prueba.txt","r")
 contenido = archivo.readline()
 print(contenido)
+print("")
+print("la seguiente linea es:")
+contenido = archivo.readline()
+print(contenido)
