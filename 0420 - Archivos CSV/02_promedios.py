@@ -9,7 +9,8 @@ def promedio_por_alumno(lector):
         for i in range(1,5):
             promedio = promedio + float(fila[i])
         promedio = promedio / 4.0
-        print("El promedio de", fila[0], "es", promedio)
+        print("El promedio de {:<8s} es {:>5.2f} ".format(fila[0], promedio))
+
 
 # Pregutamos por el nombre del archivo
 nombre_archivo = input("Escribe el nombre del archivo: ")
