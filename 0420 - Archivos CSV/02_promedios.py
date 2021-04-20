@@ -4,6 +4,8 @@ import csv
 def promedio_por_alumno(lector):
     promedio = 0.0
     for fila in lector:
+        if fila[0] == "nombre":
+            continue
         for i in range(1,5):
             promedio = promedio + float(fila[i])
         print("El promedio de", fila[0], "es", promedio)
