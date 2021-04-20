@@ -17,7 +17,7 @@ def promedio_por_materia(lector):
     for i in range(contador_alumnos):
         lista_promedio[i] = lista_promedio[i] / contador_alumnos
     for i in range(len(lista_materias)):
-        print("El promedio de la materia de {:<17s} es {:>5.2f}",lista_materias[i], lista_promedio[i])
+        print("El promedio de la materia de {:<17s} es {:>5.2f}".format(lista_materias[i], lista_promedio[i]))
 
 
 def promedio_por_alumno(lector):
