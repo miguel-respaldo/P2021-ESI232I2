@@ -30,6 +30,12 @@ def cantidad_a_pagar():
     print("----------------------------------------")
 
 
+def borrar_producto_carrito():
+    carrito.mostrar()
+    # Leemos el numero del carrito a borrar
+    num_producto = int(input("Ingresa el número del producto a borrar: "))
+    carrito.borrar(num_producto)
+
 def tiendita():
     carrito.inicializar()
     opcion_menu = 0
@@ -41,6 +47,8 @@ def tiendita():
             carrito.mostrar()
         elif opcion_menu == 3:
             agregar_al_carrito()
+        elif opcion_menu == 4:
+            borrar_producto_carrito()
         elif opcion_menu == 5:
             cantidad_a_pagar()
 

@@ -1,5 +1,6 @@
 import csv
 import productos
+import os
 
 # Nombre de los archivos para abrir
 ARCHIVO_CARRITO="carrito.csv"
@@ -41,4 +42,25 @@ def calcular_total():
         total = total + float(fila[1]) * float(fila[2])
     archivo.close()
     return total
+
+
+def borrar(numero):
+    archivo = open(ARCHIVO_CARRITO,"r")
+    archivo_temporal = open("temporal.csv","w")
+
+    lector = csv.reader(archivo)
+    escritor = csv.writer(archivo_temporal)
+
+    contador = 0
+    for fila in lector:
+        if numero == contador:
+            contador = contador + 1
+            continue
+        escritor.writerow(fila)
+        contador = contador + 1
+
+    archivo.close()
+    archivo_temporal.close()
+    os.remove(ARCHIVO_CARRITO)
+    os.rename("temporal.csv", ARCHIVO_CARRITO)
 
