@@ -1,7 +1,6 @@
 import productos
 import carrito
 
-
 def menu():
     print("")
     print("-------------------------------------")
@@ -20,7 +19,7 @@ def menu():
 def agregar_al_carrito():
     productos.mostrar()
     print("------------------------")
-    num_producto = int(input("Ingresa el número del prodcto a agregar: "))
+    num_producto = int(input("Ingresa el número del producto a agregar: "))
     cant_producto = int(input("Cuantos articulos quieres de este producto: "))
     carrito.agregar(num_producto, cant_producto)
 
@@ -37,6 +36,7 @@ def tiendita():
         elif opcion_menu == 3:
             agregar_al_carrito()
 
-
+# Manda a llamar a la funcion tiendita
+# cuando corro el programa
 if __name__ == "__main__":
     tiendita()
