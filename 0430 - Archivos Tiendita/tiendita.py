@@ -24,6 +24,12 @@ def agregar_al_carrito():
     carrito.agregar(num_producto, cant_producto)
 
 
+def cantidad_a_pagar():
+    total = carrito.calcular_total()
+    print("La cantidad total a pagar es: ", total)
+    print("----------------------------------------")
+
+
 def tiendita():
     carrito.inicializar()
     opcion_menu = 0
@@ -35,6 +41,8 @@ def tiendita():
             carrito.mostrar()
         elif opcion_menu == 3:
             agregar_al_carrito()
+        elif opcion_menu == 5:
+            cantidad_a_pagar()
 
 # Manda a llamar a la funcion tiendita
 # cuando corro el programa

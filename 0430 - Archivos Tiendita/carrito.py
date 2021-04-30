@@ -31,3 +31,14 @@ def agregar (num_producto, cantidad):
     archivo.write(nombre_producto + ", " + precio_producto + ", "+ str(cantidad) + "\n")
     archivo.close()
 
+def calcular_total():
+    archivo = open(ARCHIVO_CARRITO,"r")
+    lector = csv.reader(archivo)
+    total = 0
+    for fila in lector:
+        if fila[0] == "Producto":
+            continue
+        total = total + float(fila[1]) * float(fila[2])
+    archivo.close()
+    return total
+
